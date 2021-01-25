@@ -66,8 +66,8 @@ procedure TForm1.CastleControlBase2Open(Sender: TObject);
 begin
   CardPreview := TCardPreview.Create(Application);
   CardPreview.FullSize := True;
+  CardPreview.Start;
   CastleControlBase2.Controls.InsertFront(CardPreview);
-//  CardPreview.Start;
   CastleControlBase2.Container.UIScaling := usDpiScale;
 end;
 
@@ -138,8 +138,8 @@ end;
 procedure TCardPreview.Resize;
 begin
   inherited;
-  PreviewImage.Width := Width;
-  PreviewImage.Height := Height;
+  PreviewImage.Width := Container.Width;
+  PreviewImage.Height := Container.Height;
   PreviewImage.Left := (PreviewImage.Width - PreviewImage.EffectiveWidth) / 2;
   PreviewImage.Bottom := (PreviewImage.Height - PreviewImage.EffectiveHeight) / 2;
 end;
