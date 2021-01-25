@@ -1,0 +1,35 @@
+object Form1: TForm1
+  Left = 382
+  Height = 240
+  Top = 127
+  Width = 320
+  Caption = 'Form1'
+  ClientHeight = 240
+  ClientWidth = 320
+  LCLVersion = '2.0.10.0'
+  object CastleControlBase1: TCastleControlBase
+    Left = 0
+    Height = 240
+    Top = 0
+    Width = 136
+    Align = alLeft
+    Options = []
+    TabOrder = 0
+    OnOpen = CastleControlBase1Open
+  end
+  object CastleControlBase2: TCastleControlBase
+    Left = 141
+    Height = 240
+    Top = 0
+    Width = 179
+    Align = alClient
+    Options = []
+    TabOrder = 1
+  end
+  object Splitter1: TSplitter
+    Left = 136
+    Height = 240
+    Top = 0
+    Width = 5
+  end
+end
