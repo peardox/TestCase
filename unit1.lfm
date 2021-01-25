@@ -25,6 +25,7 @@ object Form1: TForm1
     Align = alClient
     Options = []
     TabOrder = 1
+    OnOpen = CastleControlBase2Open
   end
   object Splitter1: TSplitter
     Left = 136
